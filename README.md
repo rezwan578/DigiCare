@@ -17,19 +17,15 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 - Set and track personal and daily life goals
 - Visualize progress with personal and aggregate statistics
 
-### Health Calculators
-- BMI (Body Mass Index)
-- BMR (Basal Metabolic Rate)
-- Body Fat Percentage
-
-### Blood Donation Network
+### Blood Donation Network and Notifications
 - Find potential blood donors
 - Send and manage blood donation requests
 - Notification system for donor/requester interaction
 
-### Notifications
-- Real-time notifications for blood donation activities
-- Future-ready for goal and health data updates
+### Health Calculators
+- BMI (Body Mass Index)
+- BMR (Basal Metabolic Rate)
+- Body Fat Percentage
 
 ---
 
