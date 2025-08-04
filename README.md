@@ -22,7 +22,7 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 - Send and manage blood donation requests
 - Notification system for donor/requester interaction
 
-### Health Calculators
+### Fitness Calculators and Feedback
 - BMI (Body Mass Index)
 - BMR (Basal Metabolic Rate)
 - Body Fat Percentage
@@ -30,7 +30,7 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 ---
 
 ## Screenshots
-> Full project documentation and screenshots available in `DigiCare_report.pdf`
+- Full project documentation and screenshots available in `DigiCare_report.pdf`
 
 ---
 
@@ -41,10 +41,10 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 
 ---
 
-## 👥 Contributors
-- [Rezwan Ahmed](https://github.com/rezwanahmed0)
+## Contributors
+- Rezwan Ahmed
 
-**Supervisor**: CSE471 – System Analysis and Design  
+**Course**: CSE471 – System Analysis and Design  
 **Institution**: BRAC University, Fall 2023
 
 ---
