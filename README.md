@@ -35,7 +35,7 @@ Full project documentation and screenshots available in `DigiCare_report.pdf`
 ---
 
 ## Technologies Used
-- **Backend**: Python (Flask), Flask-Login, SQLAlchemy
+- **Backend**: Python (Flask), Flask-Login, SQL
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
 - **Database**: MySQL / phpMyAdmin
 
