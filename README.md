@@ -4,71 +4,58 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 
 ---
 
-## 🔍 Features
+## Features
 
-### 👤 User Management
+### User Management
 - Secure registration, login, and logout system
 - Password recovery with security questions
 - Profile setup and editing
 - Admin panel for banning/unbanning users
 
-### 📊 Health Tracking & Goal Setting
+### Health Tracking & Goal Setting
 - Add and monitor health metrics (e.g., weight, activity)
 - Set and track personal and daily life goals
 - Visualize progress with personal and aggregate statistics
 
-### 🧮 Health Calculators
+### Health Calculators
 - BMI (Body Mass Index)
 - BMR (Basal Metabolic Rate)
 - Body Fat Percentage
 
-### 🩸 Blood Donation Network
+### Blood Donation Network
 - Find potential blood donors
 - Send and manage blood donation requests
 - Notification system for donor/requester interaction
 
-### 📢 Notifications
+### Notifications
 - Real-time notifications for blood donation activities
 - Future-ready for goal and health data updates
 
 ---
 
-## 🖼️ Screenshots
-> _Screenshots are available in the report. The application features a responsive UI, charts for goal stats, and organized menus for easy navigation._
+## Screenshots
+> Full project documentation and screenshots available in `DigiCare_report.pdf`
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **Backend**: Python (Flask), Flask-Login, SQLAlchemy
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
 - **Database**: MySQL / phpMyAdmin
 
 ---
 
-## 📁 Project Structure Highlights
-- Backend logic with user auth, health models (goals, medication, health data)
-- Templates folder for HTML files
-- Routes for calculator tools and health statistics
-- Admin controls for platform oversight
-
----
-
 ## 👥 Contributors
 - [Rezwan Ahmed](https://github.com/rezwanahmed0)
-- Pravakar Das
-- Shahidul Islam Fuad
-- Ahanaf Ferdous
 
-**Supervisor**: Course Instructor, CSE471 – System Analysis and Design  
+**Supervisor**: CSE471 – System Analysis and Design  
 **Institution**: BRAC University, Fall 2023
 
 ---
 
-## 📄 License
+## License
 This project is for academic and demonstration purposes only. Redistribution or deployment for commercial use is not permitted without consent.
 
 ---
 
-## 🔗 Related
-- Full project documentation and screenshots available in `DigiCare_report.pdf`.
 
