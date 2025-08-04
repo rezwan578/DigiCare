@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor Requests</title>
+</head>
+<body>
+    <h1>Requests Received</h1>
+    <ul>
+        {% for request in requests %}
+            <li>
+                <p>Message: {{ request.message }}</p>
+                <p>
+                    {% if request.accepted %}
+                        <span style="color: green;">Accepted</span>
+                    {% else %}
+                        {% if request.is_seen %}
+                            <span style="color: blue;">Seen</span>
+                            <form action="/accept_donation_request/{{ request.id }}" method="POST">
+                                <button type="submit">Accept Donation</button>
+                            </form>
+                        {% else %}
+                            <span style="color: red;">Not Seen</span>
+                        {% endif %}
+                    {% endif %}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

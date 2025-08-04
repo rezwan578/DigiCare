@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Home | DigiCare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A platform for health tracking and assistance" name="description" />
+    <meta content="Rezwan Ahmed" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static',filename='./assets/images/favicon.ico')}}">
+
+    <!--Swiper slider css-->
+    <link href="{{ url_for('static',filename='./assets/libs/swiper/swiper-bundle.min.css')}}" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="{{ url_for('static',filename='./assets/js/layout.js')}}"></script>
+    <script src="{{ url_for('static',filename='./assets/libs/flatpickr/flatpickr.min.js')}}"></script>
+    <!-- Bootstrap Css -->
+    <link href="{{ url_for('static',filename='./assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="{{ url_for('static',filename='./assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="{{ url_for('static',filename='./assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="{{ url_for('static',filename='./assets/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
+
+    <style>
+      /* CSS for the footer */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures the body takes at least the height of the viewport */
+        margin: 0;
+      }
+  
+      .layout-wrapper {
+        flex: 1; /* This allows the layout wrapper to take up remaining vertical space */
+      }
+  
+      footer {
+        flex-shrink: 0; /* Prevents the footer from shrinking */
+      }
+    </style>
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" class="d-flex flex-column min-vh-100">
+
+    <!-- Begin page -->
+    <div class="layout-wrapper landing">
+        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="{{url_for('static',filename='assets/images/logo-light.jpg')}}" class="card-logo card-logo-dark" alt="logo dark" height="80">
+                    
+                </a>
+                <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
+                        
+                        
+                        <li class="nav-item">
+                            
+                                    <!-- Clickable outside dropdown -->
+<div class="btn-group me-2">
+    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+       Health Trends
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+        <li><a class="dropdown-item" href="/statistics">Statistical Overview</a></li>
+        
+</div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">     
+                        </li>
+
+                        <li class="nav-item">
+                            
+                            <div class="btn-group me-2">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Healthcare Goals
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/AddGoal">Set a Goal</a></li>
+                                    <li><a class="dropdown-item" href="ViewGoals">See All Goal Status</a></li>
+                                    
+                                </ul>
+                            </div>
+                        
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="btn-group me-2">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Health Data Tracking
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/AddHealthData">Add Health Data</a></li>
+                                    <li><a class="dropdown-item" href="/ViewHealthData">See All Health Data</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="btn-group me-2">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Medications
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/AddMed">Add Medication</a></li>
+                                    <li><a class="dropdown-item" href="/ViewMeds">See All Medications</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <div class="btn-group me-2">
+                                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Calculators
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/BmiIndex">BMI Calculator</a></li>
+                                    <li><a class="dropdown-item" href="/BmrIndex">BMR Calculator</a></li>
+                                    <li><a class="dropdown-item" href="/bodyfat_index">Body Fat Calculator</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+                    
+                        <li class="nav-item">
+                            <div class="btn-group me-2">
+                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Need Blood ?
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/BloodDonorList">Let's Find A Donor</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <div class="btn-group me-2">
+                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                    Notifications !
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                                    <li><a class="dropdown-item" href="/BloodDonationNotifications">Blood Donation</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        
+                    </ul>
+
+                    
+                </div>
+
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- start hero section -->
+        <section class="section pb-0 hero-section" id="hero">
+            <div class="bg-overlay bg-overlay-pattern"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-sm-8">
+                        <div class="text-center mt-lg-5 pt-5">
+                            <h1 class="display-4 fw-semibold mb-3 lh-base">The better way to get to know more about Healthcare with <span
+                                    class="text-success">DigiCare </span></h1>
+                            <p class="lead text-muted lh-base">A platform for health tracking and assistance</p>
+
+                            <div class="d-flex gap-2 justify-content-center mt-4">
+                                {% if current_user.is_authenticated %}
+                                <div class="btn-group me-0">
+                                    <a href="/profile" class="btn btn-primary me-1">Profile</a>
+                                    <a href="/logout" class="btn btn-outline-danger">Logout<i class="ri-eye-line align-middle ms-0"></i></a>
+                                </div>
+                                {% else %}
+                                <div class="me-0">
+                                    <a href="/login" class="btn btn-danger me-0">Login<i class="ri-eye-line align-middle ms-0"></i></a>
+                                    <a href="/register" class="btn btn-primary">Sign Up</a>
+                                </div>
+                                {% endif %}
+                                    
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+            <!-- end container -->
+            
+
+
+
+
+        
+
+
+
+
+
+            <!-- end shape -->
+        </section>
+        <!-- end hero section -->
+
+        <!-- start client section -->
+        
+        <!-- end client section -->
+
+        <!-- start services -->
+        
+        <!-- end services -->
+
+        <!-- start features -->
+        
+
+        <!-- start features -->
+        
+        <!-- end features -->
+
+        <!-- start plan -->
+        
+        <!-- end plan -->
+
+        <!-- start faqs -->
+        
+        <!-- end faqs -->
+
+        <!-- start review -->
+        
+        <!-- end review -->
+
+        <!-- start counter -->
+        
+        <!-- end counter -->
+
+        <!-- start Work Process -->
+        
+        <!-- end Work Process -->
+
+        <!-- start team -->
+        
+        <!-- end team -->
+
+        <!-- start contact -->
+        
+        <!-- end contact -->
+
+        <!-- start cta -->
+        
+        <!-- end cta -->
+
+        <!-- Start footer -->
+        <footer class="custom-footer bg-dark py-2 position-flex">
+            <div class="container">
+                <div class="row">
+                    
+
+                    <div class="col-lg-10 mt-4">
+                        <div class="row">
+                            <div class="col-sm-4 mt-4">
+                                <h5 class="text-white mb-0">Company</h5>
+                                <div class="text-muted mt-3">
+                                    <ul class="list-unstyled ff-secondary footer-list">
+                                        <li><a href="">About Us</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-4 mt-4">
+                                <h5 class="text-white mb-0">Support</h5>
+                                <div class="text-muted mt-3">
+                                    <ul class="list-unstyled ff-secondary footer-list">
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center text-sm-start align-items-center mt-5">
+                    <div class="col-sm-6">
+
+                        <div>
+                            <p class="copy-rights mb-0">
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script> © DigiCare. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- chart section -->
+
+
+        
+
+
+        <!-- end chart section -->
+
+    </div>
+    <!-- end layout wrapper -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="{{url_for('static',filename='./assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='./assets/libs/simplebar/simplebar.min.js')}}"></script>
+    <script src="{{url_for('static',filename='./assets/libs/node-waves/waves.min.js')}}"></script>
+    <script src="{{url_for('static',filename='./assets/libs/feather-icons/feather.min.js')}}"></script>
+    <script src="{{url_for('static',filename='./assets/js/pages/plugins/lord-icon-2.1.0.js')}}"></script>
+    <script src="{{url_for('static',filename='./assets/js/plugins.js')}}"></script>
+    
+
+    <!--Swiper slider js-->
+    <script src="{{url_for('static',filename='./assets/libs/swiper/swiper-bundle.min.js')}}"></script>
+
+    <!-- landing init -->
+    <script src="{{url_for('static',filename='./assets/js/pages/landing.init.js')}}"></script>
+</body>
+
+</html>

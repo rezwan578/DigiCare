@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{url_for('static',filename='./images/favicon.ico')}}">
+
+    <!-- Layout config Js -->
+    <script src="{{url_for('static',filename='./js/layout.js')}}"></script>
+    <!-- Bootstrap Css -->
+    <link href="{{url_for('static',filename="./css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="{{url_for('static',filename="./css/icons.min.css")}}" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="{{url_for('static',filename="./css/app.min.css")}}" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="{{url_for('static',filename='./css/custom.min.css')}}" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+
+            
+            <div class="col-md-10  text-right"></div>
+                
+                <style>
+                    .btn-large {
+                        padding: 10px 20px; /* Adjust padding to increase/decrease size */
+                        font-size: 16px; /* Adjust font size */
+                    }
+                    .btn-small {
+                        padding: 5px 10px; /* Adjust padding to increase/decrease size */
+                        font-size: 12px; /* Adjust font size */
+                    }
+                </style>
+                
+                <div class="btn-group me-0">
+                    <a href="/" class="btn btn-primary btn-small">Home</a>
+                </div>
+                
+                <div class="btn-group me-5">
+                    <a href="/profile" class="btn btn-primary btn-small">Profile</a>
+                </div>
+                
+                <div class="btn-group me-1">
+                    <a href="/logout" class="btn btn-outline-danger btn-small">Logout<i class="ri-eye-line align-middle ms-0"></i></a>
+                </div>
+
+        </div>
+    </div>
+</header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="/" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="{{url_for('static',filename='./images/logo-dark.png')}}" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="{{url_for('static',filename='./images/logo-dark.png')}}" alt="" height="17">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="/" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="{{url_for('static',filename='assets/images/logo-light.jpg')}}" alt="" height="60">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="{{url_for('static',filename='assets/images/logo-light.jpg')}}" alt="" height="80">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                    id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            
+                         <!-- end Dashboard Menu -->
+                        
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="position-relative mx-n4 mt-n4">
+                        <div class="profile-wid-bg profile-setting-img">
+                            <img src="{{url_for('static',filename='./images/bg-auth.png')}}" class="profile-wid-img" alt="">
+                            <div class="overlay-content">
+                                <div class="text-end p-3">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card overflow-hidden">
+                                <!-- end card header -->
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <div class="row gy-4">
+                                            
+
+
+                                                <!DOCTYPE html>
+                                                <!DOCTYPE html>
+                                                <html>
+                                                <head>
+                                                    <title>Body Fat Result</title>
+                                                    <style>
+                                                        body {
+                                                            font-family: Arial, sans-serif;
+                                                            background-color: #f4f4f4;
+                                                            margin: 0;
+                                                            padding: 0;
+                                                        }
+                                                        .container {
+                                                            width: 80%;
+                                                            margin: 20px auto;
+                                                            background-color: #fff;
+                                                            padding: 20px;
+                                                            border-radius: 5px;
+                                                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                                        }
+                                                        h1 {
+                                                            text-align: corner;
+                                                            font-size: 28px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        .result {
+                                                            font-size: 18px;
+                                                            margin-bottom: 10px;
+                                                        }
+                                                        .result-heading {
+                                                            font-weight: bold;
+                                                            margin-bottom: 5px;
+                                                        }
+                                                        .back-link {
+                                                            text-align: corner;
+                                                            margin-top: 20px;
+                                                        }
+                                                        .back-link a {
+                                                            padding: 10px 20px;
+                                                                border: none;
+                                                                border-radius: 5px;
+                                                                background-color: black;
+                                                                
+                                                                cursor: pointer;
+                                                                color: white;
+                                                                font-size: 16px;
+                                                        }
+                                                        .back-link a:hover {
+                                                            background-color: black;
+                                                        }
+                                                    </style>
+                                                </head>
+                                                <body>
+                                                    <div class="container">
+                                                        <h1>Body Fat Result</h1>
+                                                        <div class="result">
+                                                            <p class="result-heading">Gender:</p>
+                                                            <p>{{ gender }}</p>
+                                                            <p class="result-heading">Body Fat Percentage:</p>
+                                                            <p>{{ body_fat }}%</p>
+                                                        </div>
+                                                        <div class="fitness-evaluation">
+                                                            <p>Your Fitness Evaluation: {{ fitness_evaluation }}</p>
+                                                        </div>
+                                                        <div class="back-link">
+                                                            <a href="/bodyfat_index" role="button" >Calculate Again</a>
+                                                        </div>
+                                                    </div>
+                                                </body>
+                                                </html>
+
+
+
+                                                <!DOCTYPE html>
+                                                <html>
+                                                <head>
+                                                    <title>Body Fat Result</title>
+                                                    <style>
+                                                        /* General styles */
+                                                        body {
+                                                            font-family: Arial, sans-serif;
+                                                            background-color: #f4f4f4;
+                                                            margin: 0;
+                                                            padding: 0;
+                                                        }
+                                                        .container {
+                                                            width: 80%;
+                                                            margin: 20px auto;
+                                                        }
+                                                        h1 {
+                                                            text-align: center;
+                                                            font-size: 24px;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        /* Chart styles */
+                                                        .chart {
+                                                            background-color: #fff;
+                                                            padding: 20px;
+                                                            border-radius: 5px;
+                                                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                                        }
+                                                        .chart h2 {
+                                                            text-align: center;
+                                                            font-size: 24px;
+                                                            margin-bottom: 15px;
+                                                        }
+                                                        table {
+                                                            font-size: 16px;
+                                                            width: 100%;
+                                                            border-collapse: collapse;
+                                                        }
+                                                        th, td {
+                                                            border: 1px solid #ddd;
+                                                            padding: 8px;
+                                                            text-align: left;
+                                                        }
+                                                        th {
+                                                            background-color: #f2f2f2;
+                                                        }
+                                                        /* Result styles */
+                                                        .result {
+                                                            background-color: #fff;
+                                                            padding: 20px;
+                                                            border-radius: 5px;
+                                                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                                            margin-top: 20px;
+                                                        }
+                                                        .result-heading {
+                                                            font-weight: bold;
+                                                            margin-bottom: 5px;
+                                                        }
+                                                        .fitness-evaluation {
+                                                            font-weight: bold;
+                                                            text-align: center;
+                                                            margin-top: 20px;
+                                                        }
+                                                        .back-link {
+                                                            text-align: center;
+                                                            margin-top: 20px;
+                                                        }
+                                                        .back-link a {
+                                                            text-decoration: none;
+                                                            color: #3498db;
+                                                            font-weight: bold;
+                                                        }
+                                                    </style>
+                                                </head>
+                                                <body>
+                                                    <div class="container">
+                                                    
+                                                        <!-- Chart section -->
+                                                        <div class="chart">
+                                                            <h2>Body Fat Percentage vs Fitness Level Chart</h2>
+                                                            <table>
+                                                                <tr>
+                                                                    <th>Body Fat Percentage</th>
+                                                                    <th>Fitness Level</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&lt; 8%</td>
+                                                                    <td>Essential Fat</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>8% - 14%</td>
+                                                                    <td>Athletes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>14% - 18%</td>
+                                                                    <td>Fitness</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>18% - 25%</td>
+                                                                    <td>Average</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>&gt; 25%</td>
+                                                                    <td>Obese</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+
+                                                       
+
+
+
+
+
+
+                                            
+                                        
+                                            
+                                        
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                    <div class="d-none code-view">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                   
+                      
+                      
+
+            <!-- End Page-content -->
+
+            
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    
+
+    <!-- Theme Settings -->
+    
+
+    <!-- JAVASCRIPT -->
+    <script src="{{url_for('static',filename='./libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+   <script src="{{url_for('static',filename='./libs/simplebar/simplebar.min.js')}}"></script>
+   <script src="{{url_for('static',filename='./libs/node-waves/waves.min.js')}}"></script>
+   <script src="{{url_for('static',filename='./libs/feather-icons/feather.min.js')}}"></script>
+   <script src="{{url_for('static',filename='./js/pages/plugins/lord-icon-2.1.0.js')}}"></script>
+   <script src="{{url_for('static',filename='./js/plugins.js')}}"></script>
+
+    <!-- profile-setting init js -->
+    
+    <script src="{{url_for('static',filename='./js/pages/profile-setting.init.js')}}"></script>
+
+    <!-- App js -->
+    
+    <script src="{{url_for('static',filename='./js/app.js')}}"></script>
+</body>
+
+</html>
