@@ -42,7 +42,7 @@ Full project documentation and screenshots available in `DigiCare_report.pdf`
 ---
 
 ## Contributor
-**Rezwan Ahmed**
+**Rezwan Ahmed**   
 **Course**: CSE471 – System Analysis and Design  
 **Institution**: BRAC University, Fall 2023
 
