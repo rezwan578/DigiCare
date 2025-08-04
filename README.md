@@ -30,7 +30,7 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 ---
 
 ## Screenshots
-- Full project documentation and screenshots available in `DigiCare_report.pdf`
+Full project documentation and screenshots available in `DigiCare_report.pdf`
 
 ---
 
@@ -42,8 +42,7 @@ DigiCare is an all-in-one health tracking and assistance platform designed to he
 ---
 
 ## Contributor
-- Rezwan Ahmed
-
+**Rezwan Ahmed**
 **Course**: CSE471 – System Analysis and Design  
 **Institution**: BRAC University, Fall 2023
 
